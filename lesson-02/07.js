@@ -1,20 +1,15 @@
 let passportMarried = {
-    name: "Petr",
-    surname: "Petrov",
-    address: {
-        country: "USA",
-        city: "Bobryisk"
-    }
+  name: "Petr",
+  surname: "Petrov",
+  address: {
+    country: "USA",
+    city: "Bobryisk",
+  },
 };
 
-// Создаем глубокую копию объекта passportMarried и добавляем ключ married
-let passportMarried2 = {
-    ...passportMarried,
-    married: true,
-    address: {
-        ...passportMarried.address
-    }
-};
+let passportMarried2 = { ...passportMarried };
+
+passportMarried2.married = true;
 
 console.log(passportMarried);
 console.log(passportMarried2);

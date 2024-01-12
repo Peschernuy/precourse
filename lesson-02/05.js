@@ -11,4 +11,4 @@ newPassport.name = "Ivan";
 
 
 console.log(passport)
-console.log(anotherObj)
+console.log(newPassport)

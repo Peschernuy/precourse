@@ -8,8 +8,10 @@ let passportWithAddress = {
 };
 
 
-let newPassport = JSON.parse(JSON.stringify(passportWithAddress));
-newPassport.address.city = 'Bobryisk';
+let newPassportWithAddress = JSON.parse(JSON.stringify(passportWithAddress));
+
+
+newPassportWithAddress.address.city = "Bobryisk";
 
 console.log(passportWithAddress)
-console.log(newPassport)
+console.log(newPassportWithAddress)
