@@ -4,8 +4,10 @@ let passport = {
 };
 
 
-let anotherObj = Object.assign({}, passport);
-anotherObj.name = 'Ivan'
+let newPassport = { ...passport };
+
+
+newPassport.name = "Ivan";
 
 
 console.log(passport)
